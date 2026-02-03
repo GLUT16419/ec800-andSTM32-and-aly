@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    tim.h
-  * @brief   This file contains all the function prototypes for
-  *          the tim.c file
+  * @file           : tim.h
+  * @brief          : Header for tim.c file.
+  *                   This file contains the common defines of the application.
   ******************************************************************************
   * @attention
   *
@@ -27,33 +27,26 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
+extern TIM_HandleTypeDef htim2;
 
-/* USER CODE END ET */
+extern TIM_HandleTypeDef htim3;
 
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
+/* USER CODE BEGIN Private defines */
 
-/* USER CODE END EC */
+/* USER CODE END Private defines */
 
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-/* Exported functions prototypes ---------------------------------------------*/
 void MX_TIM2_Init(void);
+void MX_TIM3_Init(void);
 
-/* USER CODE BEGIN EFP */
+/* USER CODE BEGIN Prototypes */
 
-/* USER CODE END EFP */
+/* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
