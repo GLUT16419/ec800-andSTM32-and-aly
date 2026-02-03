@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    usart.h
-  * @brief   This file contains all the function prototypes for
-  *          the usart.c file
+  * @file           : usart.h
+  * @brief          : Header for usart.c file.
+  *                   This file contains the common defines of the application.
   ******************************************************************************
   * @attention
   *
@@ -27,37 +27,26 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
+extern UART_HandleTypeDef huart1;
 
-/* USER CODE END ET */
+/* USER CODE BEGIN Private defines */
 
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
+/* USER CODE END Private defines */
 
-/* USER CODE END EC */
-
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-/* Exported functions prototypes ---------------------------------------------*/
 void MX_USART1_UART_Init(void);
+
+/* USER CODE BEGIN Prototypes */
 void SendATCommand(char* command);
 void ConnectToAliyun(void);
 void SendDataToAliyun(void);
 void SendATCommandsToAliyun(void);
-
-/* USER CODE BEGIN EFP */
-
-/* USER CODE END EFP */
+/* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
