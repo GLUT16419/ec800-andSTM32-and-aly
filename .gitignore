@@ -1,36 +1,59 @@
-# IDE配置文件
-.idea/
+# STM32CubeIDE generated files
+Debug/
+Release/
+*.launch
+*.gdbinit
 
-# 编译产物
-MDK-ARM/
+# Build files
+build/
+CMakeFiles/
+*.cmake
+*.txt
 *.o
-*.axf
+*.elf
+*.bin
 *.hex
-*.crf
-*.d
 *.map
-*.htm
-*.lst
-*.sct
 
-# 备份文件
-*_backup*
+# IDE files
+.cproject
+.project
+.settings/
+.vscode/
+
+# Doxygen files
+doxygen/
+
+# Documentation files
+*.pdf
+*.docx
+
+# Backup files
+*~
 *.bak
 
-# 敏感信息文件
-sensitive_info_backup.txt
-
-# 系统文件
-Thumbs.db
-.DS_Store
-
-# 临时文件
+# Temporary files
 *.tmp
 *.temp
 
-# 日志文件
-*.log
+# System files
+.DS_Store
+Thumbs.db
 
-# 配置文件
-*.ini
-*.json
+# CubeMX files
+*.ioc.user
+
+# Generated code
+Core/Src/system_stm32f1xx.c
+Core/Src/stm32f1xx_it.c
+Core/Src/stm32f1xx_hal_msp.c
+
+# Driver files (if not needed in repo)
+# Drivers/
+
+# Other generated files
+*.d
+*.lst
+*.sym
+*.siz
+*.log
