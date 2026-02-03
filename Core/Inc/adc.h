@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    adc.h
-  * @brief   This file contains all the function prototypes for
-  *          the adc.c file
+  * @file           : adc.h
+  * @brief          : Header for adc.c file.
+  *                   This file contains the common defines of the application.
   ******************************************************************************
   * @attention
   *
@@ -27,33 +27,23 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
+extern ADC_HandleTypeDef hadc1;
 
-/* USER CODE END ET */
+/* USER CODE BEGIN Private defines */
 
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
+/* USER CODE END Private defines */
 
-/* USER CODE END EC */
-
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-/* Exported functions prototypes ---------------------------------------------*/
 void MX_ADC1_Init(void);
 
-/* USER CODE BEGIN EFP */
+/* USER CODE BEGIN Prototypes */
 
-/* USER CODE END EFP */
+/* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
