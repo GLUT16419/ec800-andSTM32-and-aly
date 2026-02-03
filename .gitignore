@@ -1,0 +1,36 @@
+# IDE配置文件
+.idea/
+
+# 编译产物
+MDK-ARM/
+*.o
+*.axf
+*.hex
+*.crf
+*.d
+*.map
+*.htm
+*.lst
+*.sct
+
+# 备份文件
+*_backup*
+*.bak
+
+# 敏感信息文件
+sensitive_info_backup.txt
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 临时文件
+*.tmp
+*.temp
+
+# 日志文件
+*.log
+
+# 配置文件
+*.ini
+*.json
